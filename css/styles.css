@@ -164,7 +164,7 @@ nav h1 a {
   min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #3c2204;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -315,6 +315,22 @@ nav h1 a {
   color: #666;
 }
 
+
+.skip-link {
+  background-color: darkblue;
+  padding: 10px 40px;
+  letter-spacing: 3px;
+  position: absolute;
+  top: -50px;
+  z-index: 100;
+  font-size: 18px;
+}
+
+
+.skip-link:focus {
+  position: absolute;
+  top: 0;
+}
 
 @media screen and (max-width: 750px){
   .inside #map-container {
