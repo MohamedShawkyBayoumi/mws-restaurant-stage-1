@@ -48,7 +48,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   
 }
 /* ====================== Navigation ====================== */
@@ -308,9 +308,7 @@ nav h1 a {
   width: 15%;
   font-weight: bold;
 }
-#reviews-list li > :nth-child(4) {
 
-}
 #restaurant-hours td {
   color: #666;
 }
@@ -369,19 +367,37 @@ nav h1 a {
     overflow: hidden;
     padding: 0 20px 20px;
     position: relative;
+    min-height: 220px;
     
   }
 
   .restaurant-img {
     margin: 0;
     max-width: 100%;
-    min-height: 248px;
+    min-height: 220px;
     min-width: 100%;
   }
 
   #restaurant-img {
     width: 100%;
     
+  }
+
+  nav h1 a {
+    letter-spacing: 5px;
+  }
+
+  #reviews-list li > :nth-child(2) {
+    padding: 3px 10px 3px;
+    width: 50%;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #reviews-list li > :nth-child(3) {
+    padding: 3px 10px 3px;
+    width: 30%;
+    font-size: 12px;
+    font-weight: bold;
   }
 
 }
