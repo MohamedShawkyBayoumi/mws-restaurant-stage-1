@@ -48,7 +48,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
-  width: 50%;
+  width: 100%;
   
 }
 /* ====================== Navigation ====================== */
@@ -220,7 +220,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  /*width: 50%;*/
+  width: 50%;
 }
 #restaurant-name {
   color: #f18200;
