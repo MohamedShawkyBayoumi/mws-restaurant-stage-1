@@ -177,3 +177,38 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 }
+
+
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').then(function(){
+      console.log('Registration Worked!');
+  }).catch(function(){
+      console.log('Registration Failed');
+  });
+}
+
+/*
+navigator.serviceWorker.register('/sw.js').then(function(reg){
+  if(!navigator.serviceWorker.controller){
+    return;
+  }
+
+  if(reg.waiting){
+    //indexController._updateReady();
+    return;
+  }
+  if(reg.installing){
+    //indexController.trackInstalling(reg.installing);
+    return;
+  }
+
+  reg.addEventListener('updatefound', function(){
+    //indexController._trackInstalling(reg.installing);
+  })
+
+  navigator.serviceWorker.addEventListener('controllerchange', function(){
+    window.location.reload();
+  });
+})
+*/
